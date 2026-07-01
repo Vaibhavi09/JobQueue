@@ -1,4 +1,6 @@
 target/
+out/
+bin/
 *.class
 *.jar
 !.mvn/wrapper/maven-wrapper.jar
