@@ -94,6 +94,12 @@ Both are optional environment variables:
 JOBQUEUE_PORT=9090 JOBQUEUE_WORKERS=8 java -jar target/jobqueue.jar
 ```
 
+To only change the worker pool size and keep the default port:
+
+```bash
+JOBQUEUE_WORKERS=8 java -jar target/jobqueue.jar
+```
+
 ### Run tests
 
 ```bash
