@@ -133,6 +133,9 @@ All fields except `name` are optional:
 | `failureProbability`  | `0.0`    | 0-1, only used by `RANDOM_FAIL`            |
 | `maxRetries`          | `3`      | retry attempts before a job is marked FAILED |
 
+Once a job's retry count exceeds `maxRetries`, it is marked `FAILED`
+permanently and is not requeued again.
+
 ### Example: submit a job
 
 ```bash
