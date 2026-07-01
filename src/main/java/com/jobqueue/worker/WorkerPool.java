@@ -81,7 +81,7 @@ public class WorkerPool {
             Thread.interrupted(); // clear the flag before this thread picks up more work
             if (job.isCancelRequested()) {
                 job.markCancelled();
-                log(threadName, job, "CANCELLED");
+                log(threadName, job, "CANCELLED (interrupted)");
             } else {
                 job.markFailed("Interrupted during shutdown");
                 log(threadName, job, "FAILED (interrupted during shutdown)");
